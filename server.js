@@ -10,7 +10,7 @@ import { SystemMessage, HumanMessage } from "@langchain/core/messages";
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Store uploaded files temporarily
 const upload = multer({
