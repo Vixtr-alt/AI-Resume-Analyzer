@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #243b55;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.upload-box {
+    background-color: #f7f9fc;
+    border: 2px dashed #9aaec4;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+.upload-box h2 {
+    margin-top: 0;
+    color: #243b55;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+}
+
+button {
+    background-color: #243b55;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3d5a80;
+}
+
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+#status {
+    text-align: center;
+    margin: 25px 0;
+    font-weight: bold;
+    color: #2c5f8a;
+}
+
+.results {
+    display: none;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #f7f9fc;
+    border-radius: 12px;
+}
+
+.results h2 {
+    color: #243b55;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#analysis {
+    white-space: normal;
+    line-height: 1.7;
+}
+
+
+#analysis h2,
+#analysis h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+#analysis p {
+    margin: 10px 0;
+    line-height: 1.7;
+}
+
+#analysis ol,
+#analysis ul {
+    margin: 12px 0;
+    padding-left: 28px;
+}
+
+#analysis li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+#analysis li p {
+    margin: 0;
+}

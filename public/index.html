@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>AI Resume Analyzer</h1>
+
+        <p class="description">
+    Upload your resume as a PDF and receive personalized
+    AI-powered feedback for Information Technology,
+    Cybersecurity, and Computer Science career opportunities.
+        </p>
+
+        <div class="upload-box">
+            <h2>Upload Your Resume</h2>
+            <label for="careerField">Select Your Career Field:</label>
+
+<select id="careerField" name="careerField" required>
+    <option value="it">Information Technology (IT)</option>
+    <option value="cybersecurity">Cybersecurity</option>
+    <option value="cs">Computer Science (CS)</option>
+</select>
+
+            <input
+                type="file"
+                id="resumeFile"
+                accept=".pdf"
+            >
+
+            <button id="analyzeButton">
+                Analyze Resume
+            </button>
+        </div>
+
+        <div id="status"></div>
+
+        <div id="results" class="results">
+    <h2>Resume Analysis</h2>
+    <div id="analysis"></div>
+
+    <button id="downloadButton" type="button">
+        Download Analysis Report
+    </button>
+</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

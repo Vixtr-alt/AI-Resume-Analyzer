@@ -1,0 +1,12 @@
+# Private API credentials
+.env
+.env.
+
+# Installed dependencies
+node_modules/
+
+# Uploaded resumes and personal information
+uploads/
+
+# Debug logs
+*.log
