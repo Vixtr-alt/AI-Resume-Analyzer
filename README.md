@@ -1,18 +1,37 @@
-# AI Agentic Lab — Simple Blogger Agent
+# AI Resume Analyzer
 
-**Website (local):** http://127.0.0.1:8000/dev-ui/?app=simple_blogger_agent
+An AI-powered web application that helps students and entry-level job seekers improve their resumes by providing personalized feedback based on their chosen career field.
 
-## Overview
-This lab uses Python, Google Agent Development Kit (ADK), and the Gemini API to run a multi-agent blogging assistant. The **Blogger** coordinates the task, **BlogPlanner** prepares an outline, and **BlogWriter** develops the blog post. The project also includes outline and post validation agents.
+## Features
 
-## Setup and Run
-1. Open the project in VS Code and navigate to the folder containing the `simple_blogger_agent` package.
-2. Install dependencies: `python -m pip install -r simple_blogger_agent/requirements.txt`
-3. Set `GOOGLE_API_KEY` in `simple_blogger_agent/.env` and choose an accessible `MODEL` (tested with `gemini-3.5-flash-lite`). Never publish your API key.
-4. Run `adk web` from the parent folder and open the website link above.
-5. Select `simple_blogger_agent` and enter a blog topic.
+- Upload and analyze PDF resumes.
+- Choose between Information Technology, Cybersecurity, and Computer Science.
+- Receive AI-generated strengths, weaknesses, and improvement suggestions.
+- Get an overall resume rating.
+- Download a copy of the analysis report.
+- Includes file validation and safeguards against prompt injection.
 
-## Test Result
-The agent was tested with a blog about the benefits of AI in education. The Planner generated an outline and the Writer produced a full article. The validation agents are included in the architecture, but their execution was not confirmed in this test.
+## Technologies Used
 
-**Note:** This website is local to the computer running ADK; it is not a public deployment.
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **AI Integration:** OpenAI API and LangChain
+- **PDF Processing:** Multer and pdf-parse
+- **Deployment:** Render
+- **Version Control:** GitHub
+
+## Live Application
+
+[Try the AI Resume Analyzer](https://ai-resume-analyzer-z1sv.onrender.com)
+
+*Note: The website uses Render's free hosting plan, so it may take a minute to load after inactivity.*
+
+## Project Purpose
+
+This project demonstrates how artificial intelligence can be integrated into a practical web application to assist with resume evaluation, career preparation, and personalized feedback while incorporating basic security practices.
+
+## Author
+
+Victor Ortiz
+
+Developed as a university final project in October 2026.
